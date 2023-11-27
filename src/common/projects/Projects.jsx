@@ -72,7 +72,7 @@ const Projects = () => {
                                 <h2>
                                     E-commerce
                                 </h2>
-                                <a href="https://github.com/agustinurien/proyecto-react"><GitHub /></a>
+                                <a className='ahref' href="https://github.com/agustinurien/proyecto-react"><GitHub /></a>
                             </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
                             <motion.div
@@ -110,7 +110,7 @@ const Projects = () => {
                                 <h2>
                                     Price-Calculator
                                 </h2>
-                                <a href="https://github.com/agustinurien/PriceCalculator"><GitHub /></a>
+                                <a className='ahref' href="https://github.com/agustinurien/PriceCalculator"><GitHub /></a>
                             </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
                             <div className='iconos'>
@@ -182,7 +182,7 @@ const Projects = () => {
                                 <h2>
                                     Atsco-Trading
                                 </h2>
-                                <a href="https://github.com/agustinurien/paginaComercioExterior"><GitHub /></a>
+                                <a className='ahref' href="https://github.com/agustinurien/paginaComercioExterior"><GitHub /></a>
                             </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
                             <div className='iconos'>
@@ -217,7 +217,7 @@ const Projects = () => {
                                 <h2>
                                     My-Portfolio
                                 </h2>
-                                <a href="https://github.com/agustinurien/myPortfolio"><GitHub /></a>
+                                <a className='ahref' href="https://github.com/agustinurien/myPortfolio"><GitHub /></a>
                             </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
                             <div className='iconos'>
