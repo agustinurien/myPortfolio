@@ -1,0 +1,60 @@
+.exp{
+    display: inline-block;
+    margin-left: 225px;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorTotalE{
+    padding: 50px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    background-image: url(../../assets/pantalla2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedorEX {
+    height: 125px;
+    width: 78%;
+    margin: 0;
+    background-color: rgba(255, 255, 255); /* Color de fondo con transparencia */
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contenedorEX P{
+    width: 50%;
+    margin: 0;
+    padding-top: 20px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.cargo{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.cargo h2{
+    margin: 0;
+    
+}
+
+.blob3{
+    position: absolute;
+    width: 100px;
+}

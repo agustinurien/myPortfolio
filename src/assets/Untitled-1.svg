@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 5102.4 2124.7" style="enable-background:new 0 0 5102.4 2124.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{opacity:0.28;fill:#F2F2F2;enable-background:new    ;}
+	.st2{opacity:0.79;fill:url(#SVGID_1_);enable-background:new    ;}
+	.st3{opacity:0.82;fill:url(#SVGID_2_);enable-background:new    ;}
+	.st4{opacity:0.79;fill:url(#SVGID_3_);enable-background:new    ;}
+</style>
+<g>
+	<rect y="85.6" class="st0" width="5097" height="2041.5"/>
+	<path class="st1" d="M1329.4,1105.6c81.9-95.2-83.4-409.1-177-397.4c-43.2,5.4-37.7,75.9-141.5,168.8
+		c-63.4,56.7-125,83.7-149.9,93.7c-23.1,9.3-74.1,29.2-142.4,33.7c-106,7.1-149.6-29.8-164.9-11.3
+		c-36.9,44.7,154.3,333.6,294.1,305.4c61.3-12.4,55.7-74.2,140.7-129.3C1132.1,1076.2,1270.9,1173.7,1329.4,1105.6z"/>
+	
+		<radialGradient id="SVGID_1_" cx="990.7214" cy="1031.3224" r="193.226" gradientTransform="matrix(1.8841 0 0 -1.8141 -781.6208 3326.5422)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FF0000;stop-opacity:0.4"/>
+		<stop  offset="8.520000e-02" style="stop-color:#FF0808;stop-opacity:0.3872"/>
+		<stop  offset="0.2205" style="stop-color:#FF1F1F;stop-opacity:0.3669"/>
+		<stop  offset="0.389" style="stop-color:#FF4545;stop-opacity:0.3417"/>
+		<stop  offset="0.5841" style="stop-color:#FF7979;stop-opacity:0.3124"/>
+		<stop  offset="0.7988" style="stop-color:#FFBBBB;stop-opacity:0.2802"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.25"/>
+	</radialGradient>
+	<ellipse class="st2" cx="1085" cy="1455.6" rx="364.1" ry="350.5"/>
+	
+		<radialGradient id="SVGID_2_" cx="771.3067" cy="1422.1738" r="210.9837" gradientTransform="matrix(2.0492 0 0 -1.9651 -859.6282 3580.3704)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FF0000;stop-opacity:0.4"/>
+		<stop  offset="8.520000e-02" style="stop-color:#FF0808;stop-opacity:0.3872"/>
+		<stop  offset="0.2205" style="stop-color:#FF1F1F;stop-opacity:0.3669"/>
+		<stop  offset="0.389" style="stop-color:#FF4545;stop-opacity:0.3417"/>
+		<stop  offset="0.5841" style="stop-color:#FF7979;stop-opacity:0.3124"/>
+		<stop  offset="0.7988" style="stop-color:#FFBBBB;stop-opacity:0.2802"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.25"/>
+	</radialGradient>
+	<ellipse class="st3" cx="720.9" cy="785.7" rx="432.3" ry="414.6"/>
+	
+		<radialGradient id="SVGID_3_" cx="2362.345" cy="1240.9054" r="857.3861" gradientTransform="matrix(1.8841 0 0 -1.8141 -781.6208 3326.5422)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FF0000;stop-opacity:0.4"/>
+		<stop  offset="8.520000e-02" style="stop-color:#FF0808;stop-opacity:0.3872"/>
+		<stop  offset="0.2205" style="stop-color:#FF1F1F;stop-opacity:0.3669"/>
+		<stop  offset="0.389" style="stop-color:#FF4545;stop-opacity:0.3417"/>
+		<stop  offset="0.5841" style="stop-color:#FF7979;stop-opacity:0.3124"/>
+		<stop  offset="0.7988" style="stop-color:#FFBBBB;stop-opacity:0.2802"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.25"/>
+	</radialGradient>
+	<ellipse class="st4" cx="3669.3" cy="1075.4" rx="1615.4" ry="1555.4"/>
+	
+		<image style="overflow:visible;" width="564" height="564" xlink:href="../../../../../Pictures/AGUSTIN/dot.png"  transform="matrix(3.6078 0 0 3.3865 2738.0869 -999.5294)">
+	</image>
+</g>
+</svg>

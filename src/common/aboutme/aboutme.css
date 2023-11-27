@@ -1,0 +1,51 @@
+.fondo3{
+    background-image: url(../../assets/pantalla2.png);
+    background-size: cover;
+}
+.ccAM{
+    background-color: transparent;
+    height: 350px;
+
+}
+.contenedorAM{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abMe{
+    display: inline-block;
+    margin-left: 225px;
+    margin-bottom: 60px;
+    margin-top: 90px;
+    font-size: 40px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    
+}
+.miHistoria{
+    display: flex;
+    gap: 20px;
+    background-color: black;
+    width: 80%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.imagenFotoMia{
+    width: 200px;
+    background-color: aqua;
+    border-radius: 6px;
+}
+
+.textoAm{
+    margin: 0px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    
+}
+.parrafos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}

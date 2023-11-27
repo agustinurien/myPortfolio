@@ -1,0 +1,82 @@
+
+
+.contenedor-main{
+    height: 90vh;
+    background-color: rgb(0, 0, 0);
+    background-image: url(../assets/fondoBlanco.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seccionInfo{
+    color: transparent;
+    width: auto;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.seccionInfo p{
+    margin: 0px;
+    padding: 10px 0px;
+    font-family: 'Space Mono', monospace;
+}
+
+.titulo{
+    color: transparent;
+    margin: 0px;
+    font-size: 90px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.contenedorImagen{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 42px;
+    z-index: 1;
+}
+
+.blob2{
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 20px 0px;
+    gap: 15px;
+    font-size: 35px;
+}
+
+.buttons button{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    border: solid 2px black;
+    font-family: 'Space Mono', monospace;
+    font-weight: bolder;
+}
+
+.buttons a{
+    display: flex;
+    align-items: center;
+    color: transparent;
+}
+
+
+.buttons button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
