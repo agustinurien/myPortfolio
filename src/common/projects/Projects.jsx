@@ -8,6 +8,7 @@ import { motion, useAnimation, useInView } from "framer-motion"
 import { useEffect } from 'react';
 import { useRef } from 'react';
 import { BiLogoFirebase } from 'react-icons/bi';
+import { SiFramer } from "react-icons/si";
 
 
 const Projects = () => {
@@ -146,7 +147,7 @@ const Projects = () => {
                                 <h2>
                                     Valores Humanos
                                 </h2>
-                                <GitHub />
+                                <a href="https://github.com/agustinurien/myPortfolio"><GitHub /></a>
                             </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
                             <div className='iconos'>
@@ -208,15 +209,15 @@ const Projects = () => {
                         <motion.div
                             whileHover={whileHoverAnim}
                             initial={{ y: 50 }}
-                            className='boxImage'>
+                            className='boxImage port'>
 
                         </motion.div>
                         <div className='contenedorInfo'>
                             <div className='tituloGit'>
                                 <h2>
-                                    E-commerce
+                                    My-Portfolio
                                 </h2>
-                                <GitHub />
+                                <a href="https://github.com/agustinurien/myPortfolio"><GitHub /></a>
                             </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
                             <div className='iconos'>
@@ -224,6 +225,7 @@ const Projects = () => {
                                 <DiCss3 className="icon" />
                                 <DiJavascript1 className="icon" />
                                 <FaReact className="icon" />
+                                <SiFramer className="icon2" />
                             </div>
                         </div>
                     </div>

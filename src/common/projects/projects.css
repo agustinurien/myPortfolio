@@ -69,6 +69,11 @@
     background-position: center;
     background-size: cover;
 }
+.boxImage.port{
+    background-image: url(../../assets/portfolioimg.png);
+    background-position: center;
+    background-size: cover;
+}
 
 .contenedorInfo{
     padding: 5px;
@@ -96,5 +101,9 @@
 
 .icon{
     font-size: 35px;
+    
+}
+.icon2{
+    font-size: 30px;
     
 }

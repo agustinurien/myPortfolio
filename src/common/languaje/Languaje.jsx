@@ -1,7 +1,7 @@
 import { FaReact } from "react-icons/fa"
 import "../languaje/language.css"
 import { AiFillHtml5 } from "react-icons/ai"
-import { DiCss3, DiIllustrator, DiJavascript1, DiPython, DiWordpress } from "react-icons/di"
+import { DiCss3, DiJavascript1, DiPython, DiWordpress } from "react-icons/di"
 import { BsFillDatabaseFill, BsGit } from "react-icons/bs"
 import { BiLogoFirebase } from "react-icons/bi"
 import { motion, useAnimation, useInView } from "framer-motion"
