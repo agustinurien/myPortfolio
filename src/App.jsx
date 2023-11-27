@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Contenido from './pages/contenido'
+import Contenido from './pages/Contenido'
 import Layout from './layout/Layout'
 
 function App() {
