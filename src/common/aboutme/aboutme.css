@@ -1,6 +1,7 @@
 .fondo3{
     background-image: url(../../assets/pantalla2.png);
     background-size: cover;
+    padding-bottom: 80px;
 }
 .ccAM{
     background-color: transparent;

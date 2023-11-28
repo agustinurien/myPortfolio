@@ -77,6 +77,7 @@ const Contenido = () => {
                 </section>
 
                 <motion.section
+
                     initial={{
                         scale: 0.5
 
@@ -86,6 +87,11 @@ const Contenido = () => {
                         scale: 1
                     }}
                     className="contenedorImagen">
+                    <motion.div
+                        initial={{ y: 175 }}
+                        className="contenidoLogo">
+
+                    </motion.div>
                     <motion.svg
                         style={{ rotate }}
                         animate={{

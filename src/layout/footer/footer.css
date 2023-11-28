@@ -17,7 +17,7 @@
 .formContact{
     margin: 30px;
     margin-top:50px;
-    margin-right: 200px;
+    margin-right: 250px;
     width: 450px;
     height: 120%;
     display: flex;
@@ -92,7 +92,7 @@
     padding-left: 10px;
     background-color: rgb(241, 241, 241);
     padding-left: 10px;
-    height: 220px;
+    height: 255px;
     font-family: 'Bricolage Grotesque', sans-serif;
     resize: none;
     padding-top: 10px;

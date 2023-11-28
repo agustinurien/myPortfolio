@@ -1,4 +1,12 @@
-
+.contenidoLogo{
+    position: absolute;
+    width: 670px;
+    height: 670px;
+    background-image: url(../assets/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 
 .contenedor-main{
     height: 90vh;
