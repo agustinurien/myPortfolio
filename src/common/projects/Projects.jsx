@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 import { BiLogoFirebase } from 'react-icons/bi';
 import { SiFramer } from "react-icons/si";
+import { Link } from 'react-router-dom';
 
 
 const Projects = () => {
@@ -61,12 +62,20 @@ const Projects = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className='proyectoIndividual'>
                     <div className='box'>
+
+
                         <motion.div
                             whileHover={whileHoverAnim}
                             initial={{ y: 50 }}
                             className='boxImage ps4'>
+                            <Link to="https://proyecto-react-xi.vercel.app/">
+                                <div className="link">
+
+                                </div>
+                            </Link>
 
                         </motion.div>
+
                         <div className='contenedorInfo'>
                             <div className='tituloGit'>
                                 <h2>
@@ -120,6 +129,47 @@ const Projects = () => {
                                 <FaReact className="icon" />
                                 <BiLogoFirebase className="icon" />
                                 <DiPython className="icon" />
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <motion.div
+                    ref={ref}
+                    variants={{
+                        hidden: { opacity: 0, x: 75 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    initial="hidden"
+                    animate={controls}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    className='proyectoIndividual'>
+                    <div className='box'>
+                        <motion.div
+                            whileHover={whileHoverAnim}
+                            initial={{ y: 50 }}
+                            className='boxImage port'>
+                            <Link to="https://my-portfolio-ten-pi-60.vercel.app/">
+                                <div className="link">
+
+                                </div>
+                            </Link>
+
+                        </motion.div>
+                        <div className='contenedorInfo'>
+                            <div className='tituloGit'>
+                                <h2>
+                                    My-Portfolio
+                                </h2>
+                                <a className='ahref' href="https://github.com/agustinurien/myPortfolio"><GitHub /></a>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
+                            <div className='iconos'>
+                                <AiFillHtml5 className="icon" />
+                                <DiCss3 className="icon" />
+                                <DiJavascript1 className="icon" />
+                                <FaReact className="icon" />
+                                <SiFramer className="icon2" />
                             </div>
                         </div>
                     </div>
@@ -190,42 +240,6 @@ const Projects = () => {
                                 <DiCss3 className="icon" />
                                 <DiJavascript1 className="icon" />
 
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <motion.div
-                    ref={ref}
-                    variants={{
-                        hidden: { opacity: 0, x: 75 },
-                        visible: { opacity: 1, x: 0 }
-                    }}
-                    initial="hidden"
-                    animate={controls}
-                    transition={{ duration: 0.6, delay: 0.4 }}
-                    className='proyectoIndividual'>
-                    <div className='box'>
-                        <motion.div
-                            whileHover={whileHoverAnim}
-                            initial={{ y: 50 }}
-                            className='boxImage port'>
-
-                        </motion.div>
-                        <div className='contenedorInfo'>
-                            <div className='tituloGit'>
-                                <h2>
-                                    My-Portfolio
-                                </h2>
-                                <a className='ahref' href="https://github.com/agustinurien/myPortfolio"><GitHub /></a>
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
-                            <div className='iconos'>
-                                <AiFillHtml5 className="icon" />
-                                <DiCss3 className="icon" />
-                                <DiJavascript1 className="icon" />
-                                <FaReact className="icon" />
-                                <SiFramer className="icon2" />
                             </div>
                         </div>
                     </div>

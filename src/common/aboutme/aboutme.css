@@ -47,6 +47,7 @@
 }
 .parrafos{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
-    gap: 20px
+    width: 80%;
 }

@@ -9,7 +9,9 @@ import AboutMe from "../common/aboutme/AboutMe"
 
 
 
+
 const Contenido = () => {
+
     const time = useTime();
     const rotate = useTransform(time, [0, 15000], [0, 360], { clamp: false });
 
@@ -72,7 +74,9 @@ const Contenido = () => {
                                 x: 0,
                                 color: "#000"
                             }}
+
                         ><Download />Download CV</motion.button>
+
                     </div>
                 </section>
 

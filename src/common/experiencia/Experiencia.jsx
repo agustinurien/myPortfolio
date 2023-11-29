@@ -66,7 +66,7 @@ const Experiencia = () => {
                             <h2>Front-end Developer</h2>
                             <span>FREELANCE</span>
                         </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores delectus consequatur sit quam explicabo maxime ab,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores delectus consequatur sit quam explicabo maxime ab,Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                        <p>I undertook the creation of a bespoke landing page for a client seeking a succinct representation of their company's essence. Melding HTML, CSS, and JavaScript, I crafted an intuitive and visually captivating platform that distilled the client's core identity.</p>
                     </motion.div>
                 </motion.div>
 
@@ -90,7 +90,8 @@ const Experiencia = () => {
                             <h2>Front-end Developer</h2>
                             <span>FREELANCE</span>
                         </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores delectus consequatur sit quam explicabo maxime ab,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores delectus consequatur sit quam explicabo maxime ab,Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                        <p>
+                            In my debut as a web developer, I created a dynamic website for "Valores Humanos," integrating HTML, CSS, and JavaScript. This platform hosts 12 tailored exercises and tests, streamlining the company's recruitment process. The site reflects my commitment to seamless user experiences and bespoke solutions, laying the groundwork for future collaborative successes.</p>
                     </motion.div>
                 </motion.div>
 
@@ -112,9 +113,9 @@ const Experiencia = () => {
                         transition={{ duration: 0.5, delay: 0 }}>
                         <div className="cargo">
                             <h2>Front-end Developer</h2>
-                            <span>FREELANCE</span>
+                            <span>FULL TIME</span>
                         </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores delectus consequatur sit quam explicabo maxime ab,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores delectus consequatur sit quam explicabo maxime ab,Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                        <p>In my freelance capacity, I developed a robust e-commerce software for AlClick, an emerging player in the industry. Fueled by React, Python, and Framer Motion, the software not only met but exceeded expectations. Its seamless functionality and engaging user interface prompted AlClick to extend a full-time developer role to me. Now, as the sole developer in their ranks, I continue to contribute innovative solutions that elevate the company's digital presence and user experience. This transition from freelancer to a key member of the development team is a testament to the impactful synergy of skills and vision.</p>
                     </motion.div>
                 </motion.div>
 

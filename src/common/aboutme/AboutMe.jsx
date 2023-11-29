@@ -51,10 +51,11 @@ const AboutMe = () => {
                             animate={controls}
                             transition={{ duration: 0.5, delay: 0.8 }}
                             className="imagenFotoMia" src={foto} alt="" />
+
                         <div className="parrafos">
                             <motion.p
                                 variants={{
-                                    hidden: { opacity: 0, y: 75 },
+                                    hidden: { opacity: 0, y: 20 },
                                     visible: {
                                         opacity: 1, y: 0,
                                         color: "#fff"
@@ -63,11 +64,12 @@ const AboutMe = () => {
                                 }
                                 initial="hidden"
                                 animate={controls}
-                                transition={{ duration: 0.5, delay: 0.1 }}
-                                className="textoAm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nihil debitis, possimus eius ea modi qui, nemo iste, voluptas distinctio perferendis neque! Non, consequuntur molestiae impedit facilis sit aliquid <minus className="lorem"></minus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt neque vel minima? Corrupti beatae, molestias alias quasi, impedit perspiciatis, sit maiores soluta pariatur libero repellat itaque earum repudiandae amet sunt!</motion.p>
+                                transition={{ duration: 0.4, delay: 0.6 }}
+                                className="textoAm">
+                                My journey began with a passion for studying animation, fueled by a significant need for financial support. To address this challenge, I made the strategic decision to delve into web development. Starting with the fundamentals of HTML and CSS, I gradually immersed myself in the world of coding.</motion.p>
                             <motion.p
                                 variants={{
-                                    hidden: { opacity: 0, y: 75 },
+                                    hidden: { opacity: 0, y: 20 },
                                     visible: {
                                         opacity: 1, y: 0,
                                         color: "#fff"
@@ -76,11 +78,11 @@ const AboutMe = () => {
                                 }
                                 initial="hidden"
                                 animate={controls}
-                                transition={{ duration: 0.5, delay: 0.3 }}
-                                className="textoAm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nihil debitis, possimus eius ea modi qui, nemo iste, voluptas distinctio perferendis neque! Non, consequuntur molestiae impedit facilis sit aliquid <minus className="lorem"></minus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt neque vel minima? Corrupti beatae, molestias alias quasi, impedit perspiciatis, sit maiores soluta pariatur libero repellat itaque earum repudiandae amet sunt!</motion.p>
+                                transition={{ duration: 0.4, delay: 0.7 }}
+                                className="textoAm">As I delved into JavaScript, a newfound interest blossomed. Eager to enhance both aesthetics and functionality, I further expanded my skill set by studying React, SQL, and Framer Motion. This comprehensive approach allowed me to not only create visually appealing web pages but also to optimize their performance and user experience. Through this transformative journey, I've not only gained proficiency in web development but also discovered a profound satisfaction in shaping digital experiences.</motion.p>
                             <motion.p
                                 variants={{
-                                    hidden: { opacity: 0, y: 75 },
+                                    hidden: { opacity: 0, y: 20 },
                                     visible: {
                                         opacity: 1, y: 0,
                                         color: "#fff"
@@ -89,8 +91,8 @@ const AboutMe = () => {
                                 }
                                 initial="hidden"
                                 animate={controls}
-                                transition={{ duration: 0.5, delay: 0.5 }}
-                                className="textoAm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nihil debitis, possimus eius ea modi qui, nemo iste, voluptas distinctio perferendis neque! Non, consequuntur molestiae impedit facilis sit aliquid <minus className="lorem"></minus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt neque vel minima? Corrupti beatae, molestias alias quasi, impedit perspiciatis, sit maiores soluta pariatur libero repellat itaque earum repudiandae amet sunt!</motion.p>
+                                transition={{ duration: 0.4, delay: 0.8 }}
+                                className="textoAm">Looking ahead, I envision leveraging this coding expertise as a stepping stone to finding the courage and financial means to pursue my original dream of studying fine arts. While coding has captured my professional focus, I plan to embrace the world of visual arts as a cherished hobby, enriching my life with a harmonious blend of technology and creativity. This journey has not only opened doors to a promising career but has also illuminated a path towards a fulfilling balance between the realms of coding and artistic expression.</motion.p>
                         </div>
                     </motion.div>
                 </section>
