@@ -142,7 +142,7 @@ const Projects = () => {
                     }}
                     initial="hidden"
                     animate={controls}
-                    transition={{ duration: 0.6, delay: 0.4 }}
+                    transition={{ duration: 0.6, delay: 0.6 }}
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div
@@ -183,7 +183,7 @@ const Projects = () => {
                     }}
                     initial="hidden"
                     animate={controls}
-                    transition={{ duration: 0.6, delay: 0.6 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div
@@ -218,7 +218,7 @@ const Projects = () => {
                     }}
                     initial="hidden"
                     animate={controls}
-                    transition={{ duration: 0.6, delay: 0.2 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div
