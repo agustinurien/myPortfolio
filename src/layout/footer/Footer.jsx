@@ -33,6 +33,7 @@ const Footer = () => {
                 ref={ref}
                 className="footer">
                 <div className="contenedorFoto">
+
                     <motion.div className="contenedorFotoAnim"
                         variants={{
                             hidden: { scaleX: 1, transformOrigin: "right" },
