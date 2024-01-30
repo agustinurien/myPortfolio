@@ -191,7 +191,7 @@ const Footer = () => {
                     className="contenedorC">
                     <h4>SOCIAL.</h4>
                     <div className="sociales">
-                        <Instagram />
+                        <a className="ahref" href="https://www.instagram.com/agustin_urien/"><Instagram /></a>
                         <Twitter />
                     </div>
                 </motion.div>

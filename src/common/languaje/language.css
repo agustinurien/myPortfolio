@@ -36,6 +36,12 @@
     justify-content: space-evenly;
     align-items: center;
 }
+.boxL.py{
+    justify-content: center;
+    
+}
+
+
 .boxL span{
     font-family: 'Space Mono', monospace;
 }

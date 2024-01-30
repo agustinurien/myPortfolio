@@ -197,7 +197,7 @@ const Projects = () => {
                                 <h2>
                                     Valores Humanos
                                 </h2>
-                                <a href="https://github.com/agustinurien/myPortfolio"><GitHub /></a>
+                                <a className='ahref' href="https://github.com/agustinurien/valoresHumanos"><GitHub /></a>
                             </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
                             <div className='iconos'>
@@ -225,6 +225,11 @@ const Projects = () => {
                             whileHover={whileHoverAnim}
                             initial={{ y: 50 }}
                             className='boxImage rorro'>
+                            <Link to="https://astcotrading.com/">
+                                <div className="link">
+
+                                </div>
+                            </Link>
 
                         </motion.div>
                         <div className='contenedorInfo'>

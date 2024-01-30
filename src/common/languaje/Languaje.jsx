@@ -216,7 +216,8 @@ const Languaje = () => {
                             >
                                 <DiPython className="iconL" />
                             </motion.div>
-                            <span>Python</span>
+                            <span style={{ color: "red", fontSize: 12, margin: 0 }}>Learning</span>
+                            <span>Python </span>
                         </motion.div>
                     </motion.div>
 
