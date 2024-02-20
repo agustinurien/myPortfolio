@@ -5,7 +5,7 @@ import '../projects/projects.css'
 import { FaReact } from 'react-icons/fa';
 import { DiCss3, DiJavascript1, DiPython } from 'react-icons/di';
 import { motion, useAnimation, useInView } from "framer-motion"
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { BiLogoFirebase } from 'react-icons/bi';
 import { SiFramer } from "react-icons/si";
@@ -36,6 +36,18 @@ const Projects = () => {
 
     }, [isInView])
 
+
+
+    const triggerAnimation = () => {
+        controls.start("close")
+
+
+    }
+    const openWindow = () => {
+        controls.start("openWindow")
+
+    }
+
     return (
         <section className='fondo2'>
             <motion.h2
@@ -51,6 +63,7 @@ const Projects = () => {
                 className="proy">Projects.</motion.h2 >
 
             <section className='contenedorProyectos'>
+
                 <motion.div
                     ref={ref}
                     variants={{
@@ -60,6 +73,43 @@ const Projects = () => {
                     initial="hidden"
                     animate={controls}
                     transition={{ duration: 0.6, delay: 0.2 }}
+                    className='proyectoIndividual'>
+                    <div className='box'>
+                        <motion.div
+                            whileHover={whileHoverAnim}
+                            initial={{ y: 50 }}
+                            className='boxImage'>
+
+                        </motion.div>
+                        <div className='contenedorInfo'>
+                            <div className='tituloGit'>
+                                <h2>
+                                    Public-Spotify
+                                </h2>
+                                <GitHub />
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
+                            <div className='iconos'>
+                                <AiFillHtml5 className="icon" />
+                                <DiCss3 className="icon" />
+                                <DiJavascript1 className="icon" />
+                                <FaReact className="icon" />
+                                <BiLogoFirebase className="icon" />
+                                <SiFramer className="icon2" />
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <motion.div
+                    ref={ref}
+                    variants={{
+                        hidden: { opacity: 0, x: 75 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    initial="hidden"
+                    animate={controls}
+                    transition={{ duration: 0.6, delay: 0.4 }}
                     className='proyectoIndividual'>
                     <div className='box'>
 
@@ -105,15 +155,34 @@ const Projects = () => {
                     }}
                     initial="hidden"
                     animate={controls}
-                    transition={{ duration: 0.6, delay: 0.4 }}
+                    transition={{ duration: 0.6, delay: 0.6 }}
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div
+                            onClick={() => openWindow()}
                             whileHover={whileHoverAnim}
                             initial={{ y: 50 }}
-                            className='boxImage guille'>
+                            className='boxImage guille'
 
+                        >
                         </motion.div>
+
+
+                        <motion.div
+
+                            className='window'
+                            variants={{
+                                close: { opacity: 0, y: 0 },
+                                openWindow: { opacity: 1, y: -140 }
+                            }}
+                            initial="close"
+                            animate={controls}
+                            transition={{ duration: 0.25, delay: 0 }}
+                            onMouseOut={() => triggerAnimation()}
+                        >
+                            <h3 style={{ margin: 0, lineHeight: 1.8, padding: 30 }}> The website might be for personal use or limited to a specific audience, and sharing the domain could compromise the privacy of the individuals involved.</h3>
+                        </motion.div>
+
                         <div className='contenedorInfo'>
                             <div className='tituloGit'>
                                 <h2>
@@ -129,46 +198,6 @@ const Projects = () => {
                                 <FaReact className="icon" />
                                 <BiLogoFirebase className="icon" />
                                 <DiPython className="icon" />
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <motion.div
-                    ref={ref}
-                    variants={{
-                        hidden: { opacity: 0, x: 75 },
-                        visible: { opacity: 1, x: 0 }
-                    }}
-                    initial="hidden"
-                    animate={controls}
-                    transition={{ duration: 0.6, delay: 0.6 }}
-                    className='proyectoIndividual'>
-                    <div className='box'>
-                        <motion.div
-                            whileHover={whileHoverAnim}
-                            initial={{ y: 50 }}
-                            className='boxImage port'>
-                            <Link to="https://my-portfolio-ten-pi-60.vercel.app/">
-                                <div className="link">
-
-                                </div>
-                            </Link>
-
-                        </motion.div>
-                        <div className='contenedorInfo'>
-                            <div className='tituloGit'>
-                                <h2>
-                                    My-Portfolio
-                                </h2>
-                                <a className='ahref' href="https://github.com/agustinurien/myPortfolio"><GitHub /></a>
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
-                            <div className='iconos'>
-                                <AiFillHtml5 className="icon" />
-                                <DiCss3 className="icon" />
-                                <DiJavascript1 className="icon" />
-                                <FaReact className="icon" />
                                 <SiFramer className="icon2" />
                             </div>
                         </div>
@@ -270,7 +299,7 @@ const Projects = () => {
                         <div className='contenedorInfo'>
                             <div className='tituloGit'>
                                 <h2>
-                                    E-commerce
+                                    Public-Spotify
                                 </h2>
                                 <GitHub />
                             </div>

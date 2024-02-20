@@ -35,7 +35,7 @@
 }
 
 .imagenFotoMia{
-    width: 200px;
+    width: 250px;
     background-color: aqua;
     border-radius: 6px;
 }
@@ -48,6 +48,7 @@
 .parrafos{
     display: flex;
     justify-content: space-around;
+    
     flex-direction: column;
-    width: 80%;
+    width: 55%;
 }

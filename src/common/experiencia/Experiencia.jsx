@@ -63,7 +63,7 @@ const Experiencia = () => {
                         className="contenedorEX"
                         transition={{ duration: 0.5, delay: 0 }}>
                         <div className="cargo">
-                            <h2>Front-end Developer</h2>
+                            <h2>First Landing page</h2>
                             <span>FREELANCE</span>
                         </div>
                         <p>I undertook the creation of a bespoke landing page for a client seeking a succinct representation of their company's essence. Melding HTML, CSS, and JavaScript, I crafted an intuitive and visually captivating platform that distilled the client's core identity.</p>
@@ -87,7 +87,7 @@ const Experiencia = () => {
                         className="contenedorEX"
                         transition={{ duration: 0.5, delay: 0 }}>
                         <div className="cargo">
-                            <h2>Front-end Developer</h2>
+                            <h2>Valores Humanos - Tests</h2>
                             <span>FREELANCE</span>
                         </div>
                         <p>
@@ -112,10 +112,10 @@ const Experiencia = () => {
                         className="contenedorEX"
                         transition={{ duration: 0.5, delay: 0 }}>
                         <div className="cargo">
-                            <h2>Front-end Developer</h2>
+                            <h2>First Software</h2>
                             <span>FULL TIME</span>
                         </div>
-                        <p>In my freelance capacity, I developed a robust e-commerce software for AlClick, an emerging player in the industry. Fueled by React, Python, and Framer Motion, the software not only met but exceeded expectations. Its seamless functionality and engaging user interface prompted AlClick to extend a full-time developer role to me. Now, as the sole developer in their ranks, I continue to contribute innovative solutions that elevate the company's digital presence and user experience. This transition from freelancer to a key member of the development team is a testament to the impactful synergy of skills and vision.</p>
+                        <p>In my freelance capacity, I developed a robust Toolset software for AlClick, an emerging player in the industry. Fueled by React, Python, and Framer Motion, the software not only met but exceeded expectations. Its seamless functionality and engaging user interface prompted AlClick to extend a full-time developer role to me. Now, as the sole developer in their ranks, I continue to contribute innovative solutions that elevate the company's digital presence and user experience. This transition from freelancer to a key member of the development team is a testament to the impactful synergy of skills and vision.</p>
                     </motion.div>
                 </motion.div>
 
