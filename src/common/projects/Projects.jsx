@@ -1,7 +1,6 @@
 import { GitHub } from '@mui/icons-material'
 import '../projects/projects.css'
 import { AiFillHtml5 } from 'react-icons/ai';
-import '../projects/projects.css'
 import { FaReact } from 'react-icons/fa';
 import { DiCss3, DiJavascript1, DiPython } from 'react-icons/di';
 import { motion, useAnimation, useInView } from "framer-motion"
@@ -76,11 +75,27 @@ const Projects = () => {
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div
+                            onClick={() => openWindow()}
                             whileHover={whileHoverAnim}
                             initial={{ y: 50 }}
-                            className='boxImage'>
+                            className='boxImage spoticopy'>
 
                         </motion.div>
+                        <motion.div
+
+                            className='window'
+                            variants={{
+                                close: { opacity: 0, y: 0 },
+                                openWindow: { opacity: 1, y: -144 }
+                            }}
+                            initial="close"
+                            animate={controls}
+                            transition={{ duration: 0.25, delay: 0 }}
+                            onMouseOut={() => triggerAnimation()}
+                        >
+                            <h3 style={{ margin: 0, lineHeight: 2, padding: 35 }}>The website is not done yet. We are still in the process of development and refinement. Stay tuned for updates!</h3>
+                        </motion.div>
+
                         <div className='contenedorInfo'>
                             <div className='tituloGit'>
                                 <h2>
@@ -159,29 +174,18 @@ const Projects = () => {
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div
-                            onClick={() => openWindow()}
+
                             whileHover={whileHoverAnim}
                             initial={{ y: 50 }}
                             className='boxImage guille'
-
                         >
+                            <Link to="https://price-calculator2.vercel.app/">
+                                <div className="link">
+
+                                </div>
+                            </Link>
                         </motion.div>
 
-
-                        <motion.div
-
-                            className='window'
-                            variants={{
-                                close: { opacity: 0, y: 0 },
-                                openWindow: { opacity: 1, y: -140 }
-                            }}
-                            initial="close"
-                            animate={controls}
-                            transition={{ duration: 0.25, delay: 0 }}
-                            onMouseOut={() => triggerAnimation()}
-                        >
-                            <h3 style={{ margin: 0, lineHeight: 1.8, padding: 30 }}> The website might be for personal use or limited to a specific audience, and sharing the domain could compromise the privacy of the individuals involved.</h3>
-                        </motion.div>
 
                         <div className='contenedorInfo'>
                             <div className='tituloGit'>
@@ -219,6 +223,12 @@ const Projects = () => {
                             whileHover={whileHoverAnim}
                             initial={{ y: 50 }}
                             className='boxImage valores'>
+
+                            <Link to="https://valores-humanos.vercel.app/">
+                                <div className="link">
+
+                                </div>
+                            </Link>
 
                         </motion.div>
                         <div className='contenedorInfo'>
@@ -279,40 +289,7 @@ const Projects = () => {
                     </div>
                 </motion.div>
 
-                <motion.div
-                    ref={ref}
-                    variants={{
-                        hidden: { opacity: 0, x: 75 },
-                        visible: { opacity: 1, x: 0 }
-                    }}
-                    initial="hidden"
-                    animate={controls}
-                    transition={{ duration: 0.6, delay: 0.6 }}
-                    className='proyectoIndividual'>
-                    <div className='box'>
-                        <motion.div
-                            whileHover={whileHoverAnim}
-                            initial={{ y: 50 }}
-                            className='boxImage'>
 
-                        </motion.div>
-                        <div className='contenedorInfo'>
-                            <div className='tituloGit'>
-                                <h2>
-                                    Public-Spotify
-                                </h2>
-                                <GitHub />
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
-                            <div className='iconos'>
-                                <AiFillHtml5 className="icon" />
-                                <DiCss3 className="icon" />
-                                <DiJavascript1 className="icon" />
-                                <FaReact className="icon" />
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
 
             </section>
         </section>

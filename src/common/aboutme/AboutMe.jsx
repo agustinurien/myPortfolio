@@ -4,12 +4,8 @@ import { motion, useAnimation, useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
 import Lottie from "react-lottie"
 
-import astro from "../../assets/astro.json"
-import worlds from "../../assets/words.json"
-import roket from "../../assets/roket.json"
 
-const astroData = { loop: true, autoplay: true, animationData: astro }
-const worldsData = { loop: true, autoplay: true, animationData: worlds }
+import roket from "../../assets/roket.json"
 const roketData = { loop: true, autoplay: true, animationData: roket }
 
 const AboutMe = () => {
@@ -103,9 +99,20 @@ const AboutMe = () => {
                                 transition={{ duration: 0.4, delay: 0.8 }}
                                 className="textoAm">Looking ahead, I envision leveraging this coding expertise as a stepping stone to finding the courage and financial means to pursue my original dream of studying fine arts. While coding has captured my professional focus, I plan to embrace the world of visual arts as a cherished hobby, enriching my life with a harmonious blend of technology and creativity. This journey has not only opened doors to a promising career but has also illuminated a path towards a fulfilling balance between the realms of coding and artistic expression.</motion.p>
                         </div>
-                        <div>
+                        <motion.div
+                            variants={{
+                                hidden: { opacity: 0 },
+                                visible: {
+                                    opacity: 1,
+                                },
+                            }
+                            }
+                            initial="hidden"
+                            animate={controls}
+                            transition={{ duration: 0.4, delay: 0.8 }}
+                        >
                             <Lottie options={roketData} width={370} height={340} style={{ paddingLeft: 3.5 }} />
-                        </div>
+                        </motion.div>
                     </motion.div>
                 </section>
             </div>
