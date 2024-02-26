@@ -1,6 +1,6 @@
 .fondo4{
-    
-    padding-bottom: 190px;
+    padding-top: 100px;
+    padding-bottom: 250px;
 }
 .skills{
     display: inline-block;
@@ -76,7 +76,7 @@
 }
 .boxL.py:hover{
     background: radial-gradient(circle at top center,
-    rgb(252, 255, 83), 5%, 
+    rgb(83, 137, 255), 5%, 
     rgb(245,245,245), 200%, 
     rgb(245,245,245)
     );
@@ -119,6 +119,9 @@
 
 .iconL{
     font-size: 50px;
+}
+.iconL.tS{
+    font-size: 45px;
 }
 .iconL.git{
     font-size: 40px;

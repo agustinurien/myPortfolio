@@ -22,10 +22,10 @@
 .contenidoHeader ul{
     margin: 0px;
     padding: 20px;
-    padding-left: 60px;
+    padding-left: 20px;
     list-style: none;
     display: flex;
-    gap: 100px;
+    gap: 70px;
     font-family: 'Space Mono', monospace;
     color: rgb(0, 0, 0);
 }
@@ -35,12 +35,24 @@
 }
 .contenidoHeader ul li:hover {
     font-weight: bolder;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    
     scale: 1.1;
 }
 
 .progressBar{
-    background-color: rgb(131, 131, 131);
+    background-color: rgb(58, 58, 58);
     height: 10px;
     z-index: 2;
+}
+
+.liS button{
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+}
+.liS button:hover{
+    font-weight: bolder;
+    scale: 1.1;
 }

@@ -43,7 +43,7 @@ const Experiencia = () => {
                 initial="hidden"
                 animate={controls}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="exp">Experiencia.</motion.h2 >
+                className="exp">Experience.</motion.h2 >
             <div className="contenedorTotalE">
 
                 <motion.div

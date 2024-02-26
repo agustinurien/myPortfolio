@@ -6,11 +6,42 @@ import Projects from "../common/projects/Projects"
 import Languaje from "../common/languaje/Languaje"
 import AboutMe from "../common/aboutme/AboutMe"
 
-
-
+import cvPdf from '../cv/cv-AgustinUrien.pdf';
 
 
 const Contenido = () => {
+
+    const downloadPdf = async () => {
+        try {
+            // Fetch the PDF file
+            const response = await fetch(cvPdf);
+            console.log('Response:', response);
+            const blob = await response.blob();
+
+            // Create a URL for the blob object
+            const url = URL.createObjectURL(blob);
+
+            // Create a link element
+            const link = document.createElement('a');
+
+            // Set the href attribute of the link to the URL of the blob
+            link.href = url;
+
+            // Set the download attribute of the link to the desired file name
+            link.download = 'cv-AgustinUrien.pdf';
+
+            // Append the link to the document body
+            document.body.appendChild(link);
+
+            // Trigger a click event on the link
+            link.click();
+
+            // Remove the link from the document body
+            document.body.removeChild(link);
+        } catch (error) {
+            console.error('Error downloading PDF:', error);
+        }
+    };
 
     const time = useTime();
     const rotate = useTransform(time, [0, 15000], [0, 360], { clamp: false });
@@ -38,12 +69,13 @@ const Contenido = () => {
                         }} className="titulo">Agustin Urien.</motion.h1>
 
                     <motion.p
+                        className="brief"
                         initial={{ opacity: 0 }}
-                        transition={{ duration: 0.5, delay: 0.3 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
                         animate={{
                             opacity: 1,
-                            color: "#000"
-                        }}> Lorem ipsum dolor sit amet consectetur adipisicing elit.</motion.p>
+
+                        }}> I'm a Front-End Developer specializing in crafting visually captivating websites that captivate and delight users. With a seamless blend of technical mastery and artistic innovation, I create user-friendly digital experiences that leave a lasting impression. </motion.p>
                     <div className="buttons">
                         <motion.a
                             whileHover={whileHover}
@@ -66,6 +98,7 @@ const Contenido = () => {
                             }}
                             href="https://github.com/agustinurien"><GitHub fontSize="inherit" /></motion.a>
                         <motion.button
+                            onClick={() => downloadPdf()}
                             whileHover={{ scale: 1.08, delay: 0, color: "#fff" }}
                             initial={{ x: -75, opacity: 0 }}
                             transition={{ duration: 0.5, delay: 0.05 }}

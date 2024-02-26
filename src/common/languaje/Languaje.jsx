@@ -7,6 +7,7 @@ import { BiLogoFirebase } from "react-icons/bi"
 import { motion, useAnimation, useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
 import { SiFramer } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 
 
 const Languaje = () => {
@@ -40,7 +41,9 @@ const Languaje = () => {
     }, [isInView])
 
     return (
-        <section className="fondo4">
+        <section
+            id="skill"
+            className="fondo4">
             <motion.h2
                 variants={{
                     hidden: { opacity: 0, x: 75 },
@@ -214,10 +217,10 @@ const Languaje = () => {
                                 animate={controls}
                                 transition={{ duration: 0.3, delay: 0 }}
                             >
-                                <DiPython className="iconL" />
+                                <BiLogoTypescript className="iconL tS" />
                             </motion.div>
-                            <span style={{ color: "red", fontSize: 12, margin: 0 }}>Learning</span>
-                            <span>Python </span>
+                            <span style={{ color: "red", fontSize: 11, margin: 0 }}>Learning</span>
+                            <span>TypeScript </span>
                         </motion.div>
                     </motion.div>
 

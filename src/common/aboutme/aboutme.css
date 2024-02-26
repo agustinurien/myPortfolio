@@ -27,7 +27,7 @@
     display: flex;
     gap: 20px;
     background-color: black;
-    width: 80%;
+    width: 76%;
     border-radius: 10px;
     color: rgb(255, 255, 255);
     padding: 20px;
@@ -35,7 +35,7 @@
 }
 
 .imagenFotoMia{
-    width: 250px;
+    width: 280px;
     background-color: aqua;
     border-radius: 6px;
 }

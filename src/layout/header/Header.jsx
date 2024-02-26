@@ -1,5 +1,7 @@
 import "../header/header.css"
 import { motion, useScroll } from "framer-motion"
+import { Link } from "react-scroll";
+
 const Header = () => {
     const { scrollYProgress } = useScroll()
     return (
@@ -27,20 +29,14 @@ const Header = () => {
                             }}
                             transition={{ duration: 0.5, delay: 0.5 }}
 
-                        >Home</motion.li>
+                        >
+                            <a href="/" style={{ textDecoration: "none", color: "white" }}>
+                                Home
+                            </a>
+                        </motion.li>
+
                         <motion.li
-                            variants={{
-                                hidden: { opacity: 0, x: -75 },
-                            }
-                            }
-                            initial="hidden"
-                            animate={{
-                                opacity: 1, x: 0,
-                                color: "#fff"
-                            }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
-                        >About me</motion.li>
-                        <motion.li
+                            className="liS"
                             variants={{
                                 hidden: { opacity: 0, x: -75 },
                             }
@@ -51,8 +47,19 @@ const Header = () => {
                                 color: "#fff"
                             }}
                             transition={{ duration: 0.5, delay: 0.3 }}
-                        >Projects</motion.li>
+                        ><Link
+                            activeClass="active"
+                            to="proj"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                                <button>Projects</button>
+                            </Link></motion.li>
+
                         <motion.li
+                            className="liS"
                             variants={{
                                 hidden: { opacity: 0, x: -75 },
                             }
@@ -62,8 +69,64 @@ const Header = () => {
                                 opacity: 1, x: 0,
                                 color: "#fff"
                             }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                        >Skills</motion.li>
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                        ><Link
+                            activeClass="active"
+                            to="abme"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                                <button>About me</button>
+                            </Link></motion.li>
+
+                        <motion.li
+                            className="liS"
+                            variants={{
+                                hidden: { opacity: 0, x: -75 },
+                            }
+                            }
+                            initial="hidden"
+                            animate={{
+                                opacity: 1, x: 0,
+                                color: "#fff"
+                            }}
+                            transition={{ duration: 0.5, delay: 0.3 }}
+                        ><Link
+                            activeClass="active"
+                            to="skill"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                                <button>Skills</button>
+                            </Link></motion.li>
+
+                        <motion.li
+                            className="liS"
+                            variants={{
+                                hidden: { opacity: 0, x: -75 },
+                            }
+                            }
+                            initial="hidden"
+                            animate={{
+                                opacity: 1, x: 0,
+                                color: "#fff"
+                            }}
+                            transition={{ duration: 0.5, delay: 0.3 }}
+                        ><Link
+                            activeClass="active"
+                            to="cont"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                                <button>Contact</button>
+                            </Link></motion.li>
+
                     </ul>
                 </nav>
             </div>

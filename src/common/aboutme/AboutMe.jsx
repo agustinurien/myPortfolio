@@ -1,5 +1,5 @@
 import "../aboutme/aboutme.css"
-import foto from "../../assets/yo2.png"
+import foto from "../../assets/yo2.jpg"
 import { motion, useAnimation, useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
 import Lottie from "react-lottie"
@@ -25,8 +25,20 @@ const AboutMe = () => {
     }, [isInView])
 
     return (
-        <section className="fondo3">
-            <h1 className="abMe">About me.</h1>
+        <section
+            id="abme"
+            className="fondo3">
+            <motion.h1
+                variants={{
+                    hidden: { opacity: 0, x: 75 },
+                    visible: { opacity: 1, x: 0 }
+                }
+                }
+                initial="hidden"
+                animate={controls}
+                ref={ref}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="abMe">About me.</motion.h1>
             <div className="ccAM">
 
                 <section className="contenedorAM">
@@ -101,7 +113,7 @@ const AboutMe = () => {
                         </div>
                         <motion.div
                             variants={{
-                                hidden: { opacity: 0 },
+                                hidden: { opacity: 0, x: -30 },
                                 visible: {
                                     opacity: 1,
                                 },
@@ -111,7 +123,7 @@ const AboutMe = () => {
                             animate={controls}
                             transition={{ duration: 0.4, delay: 0.8 }}
                         >
-                            <Lottie options={roketData} width={370} height={340} style={{ paddingLeft: 3.5 }} />
+                            <Lottie options={roketData} width={380} height={380} style={{ paddingLeft: 3.5 }} />
                         </motion.div>
                     </motion.div>
                 </section>

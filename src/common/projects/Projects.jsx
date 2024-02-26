@@ -48,7 +48,9 @@ const Projects = () => {
     }
 
     return (
-        <section className='fondo2'>
+        <section
+            id='proj'
+            className='fondo2'>
             <motion.h2
                 variants={{
                     hidden: { opacity: 0, x: 75 },
