@@ -12,6 +12,9 @@ import Lottie from "react-lottie"
 
 import stars from "../../assets/stars.json"
 import stars2 from "../../assets/stars2.json"
+import tracker from "../../assets/tracker.json"
+
+const trackerData = { loop: true, autoplay: true, animationData: tracker }
 const stars2Data = { loop: true, autoplay: true, animationData: stars2 }
 const starsData = { loop: true, autoplay: true, animationData: stars }
 const Footer = () => {
@@ -70,6 +73,7 @@ const Footer = () => {
                 id="cont"
                 ref={ref}
                 className="footer">
+
                 <div className="contenedorFoto">
 
                     <motion.div className="contenedorFotoAnim"
@@ -83,6 +87,7 @@ const Footer = () => {
                     >
 
                     </motion.div>
+
                 </div>
 
                 <form ref={form} onSubmit={sendEmail}>

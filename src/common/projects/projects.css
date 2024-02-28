@@ -20,14 +20,15 @@
 }
 
 .proyectoIndividual{
-    width: 350px;
+    width: 360px;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 .proyectoIndividual p{
     margin: 0px;
-    padding: 10px 0px;
+    padding: 5px 0px 10px 5px;
     font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 13px;
 }
 
 .box{
@@ -134,3 +135,60 @@
     border-radius: 5px;
     font-size: 12px;
 }
+
+.desplegar{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.projectTexts {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 2px 1.5px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+    scrollbar-width: thin; /* Ancho más delgado de la barra de desplazamiento */
+    scrollbar-color: rgb(230, 230, 230) transparent;
+}
+
+
+/* Estilos específicos de la barra de desplazamiento para navegadores WebKit (Chrome, Safari, Opera) */
+.projectTexts::-webkit-scrollbar {
+    width: 6px; /* Ancho más delgado */
+}
+
+.projectTexts::-webkit-scrollbar-track {
+    background: transparent; /* Fondo transparente */
+}
+
+.projectTexts::-webkit-scrollbar-thumb {
+    background: transparent; /* Barra transparente */
+    border: none; /* Sin borde */
+}
+
+/* Estilos específicos de la barra de desplazamiento para navegadores Firefox */
+.projectTexts {
+    scrollbar-width: thin; /* Ancho más delgado */
+}
+
+.projectTexts::-moz-scrollbar {
+    width: 6px; /* Ancho más delgado */
+}
+
+.projectTexts::-moz-scrollbar-thumb {
+    background: transparent; /* Barra transparente */
+    border: none; /* Sin borde */
+}
+
+.projectTexts p{
+    padding: 15px;
+    padding-top: 7px;
+    padding-bottom: 0px;
+    font-weight: 800;
+    color: rgb(92, 92, 92);
+}
+

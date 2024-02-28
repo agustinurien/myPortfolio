@@ -1,6 +1,13 @@
 import "../header/header.css"
 import { motion, useScroll } from "framer-motion"
 import { Link } from "react-scroll";
+import Lottie from "react-lottie"
+
+
+import stars from "../../assets/stars.json"
+import stars2 from "../../assets/stars2.json"
+const stars2Data = { loop: true, autoplay: true, animationData: stars2 }
+const starsData = { loop: true, autoplay: true, animationData: stars }
 
 const Header = () => {
     const { scrollYProgress } = useScroll()
@@ -13,8 +20,24 @@ const Header = () => {
                 zIndex: 2
             }}
         >
+
             <div
                 className="contenidoHeader">
+                <motion.div
+                    initial={{ x: 0 }}
+                    className="stars">
+                    <Lottie options={starsData} width={100} height={100} />
+                </motion.div>
+                <motion.div
+                    initial={{ x: -200 }}
+                    className="stars">
+                    <Lottie options={stars2Data} width={100} height={100} />
+                </motion.div>
+                <motion.div
+                    initial={{ x: -500 }}
+                    className="stars">
+                    <Lottie options={stars2Data} width={100} height={100} />
+                </motion.div>
                 <nav>
                     <ul>
                         <motion.li
@@ -36,6 +59,7 @@ const Header = () => {
                         </motion.li>
 
                         <motion.li
+                            style={{ zIndex: 2 }}
                             className="liS"
                             variants={{
                                 hidden: { opacity: 0, x: -75 },
@@ -59,6 +83,7 @@ const Header = () => {
                             </Link></motion.li>
 
                         <motion.li
+                            style={{ zIndex: 2 }}
                             className="liS"
                             variants={{
                                 hidden: { opacity: 0, x: -75 },
@@ -82,6 +107,7 @@ const Header = () => {
                             </Link></motion.li>
 
                         <motion.li
+                            style={{ zIndex: 2 }}
                             className="liS"
                             variants={{
                                 hidden: { opacity: 0, x: -75 },
@@ -105,6 +131,7 @@ const Header = () => {
                             </Link></motion.li>
 
                         <motion.li
+                            style={{ zIndex: 2 }}
                             className="liS"
                             variants={{
                                 hidden: { opacity: 0, x: -75 },

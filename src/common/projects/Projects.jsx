@@ -9,7 +9,7 @@ import { useRef } from 'react';
 import { BiLogoFirebase } from 'react-icons/bi';
 import { SiFramer } from "react-icons/si";
 import { Link } from 'react-router-dom';
-
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const Projects = () => {
 
@@ -46,6 +46,8 @@ const Projects = () => {
         controls.start("openWindow")
 
     }
+
+    const [open, setOpen] = useState("")
 
     return (
         <section
@@ -101,11 +103,78 @@ const Projects = () => {
                         <div className='contenedorInfo'>
                             <div className='tituloGit'>
                                 <h2>
-                                    Public-Spotify
+                                    Publicify
                                 </h2>
                                 <GitHub />
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
+
+                            <div className='desplegar'>
+                                <p>A platform inspired by Spotify, redefined to foster a collaborative community spirit. </p>
+                                <button
+
+                                    onClick={() => setOpen("ps")}
+                                    style={{
+                                        backgroundColor: "transparent",
+                                        border: 0,
+                                        fontSize: 20
+                                    }}><IoIosArrowDown />
+                                </button>
+                            </div>
+
+                            {
+                                open === "ps" &&
+                                <motion.div
+                                    initial={{ y: -58, x: -10, width: 365, height: 0, opacity: 0 }}
+                                    animate={{
+                                        height: 150,
+                                        opacity: 1
+                                    }}
+                                    transition={{ duration: 0.3, delay: 0 }}
+
+                                    className='projectTexts'>
+
+                                    <motion.p
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.25, delay: 0.2 }}
+                                    >
+                                        Users are empowered to create, edit, and contribute to playlists, transforming music curation into a communal endeavor. Developed with the aim of testing the dynamics of cooperation and respect within a digital community. <br /> <br /> Publicify invites individuals to participate in friendly competition, showcasing their prowess in crafting the ultimate playlists. As a work in progress, Publicify promises an immersive experience. <br /> <br /> Join us as we embark on this exciting journey to uncover the power of collective creativity.
+                                    </motion.p>
+
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            height: 30,
+                                            alignItems: "center"
+
+                                        }}
+                                    >
+                                        <motion.button
+                                            initial={{ opacity: 0, y: -50 }}
+                                            animate={{ opacity: 1, y: 0 }}
+
+                                            transition={{ duration: 0.2, delay: 0.1 }}
+                                            onClick={() => setOpen("")}
+
+                                            style={{
+                                                backgroundColor: "transparent",
+                                                border: 0,
+                                                fontSize: 15,
+                                                marginTop: 12,
+                                                marginBottom: 12,
+                                                color: "gray"
+
+                                            }}><IoIosArrowUp />
+                                        </motion.button>
+                                    </div>
+
+
+
+
+
+                                </motion.div>
+                            }
                             <div className='iconos'>
                                 <AiFillHtml5 className="icon" />
                                 <DiCss3 className="icon" />
@@ -150,7 +219,74 @@ const Projects = () => {
                                 </h2>
                                 <a className='ahref' href="https://github.com/agustinurien/proyecto-react"><GitHub /></a>
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
+                            <div className='desplegar'>
+                                <p> Playstation shop. The website allows users to browse through and buy PlayStation products </p>
+                                <button
+
+                                    onClick={() => setOpen("ec")}
+                                    style={{
+                                        backgroundColor: "transparent",
+                                        border: 0,
+                                        fontSize: 20
+                                    }}><IoIosArrowDown />
+                                </button>
+                            </div>
+
+                            {
+                                open === "ec" &&
+                                <motion.div
+                                    initial={{ y: -58, x: -10, width: 365, height: 0, opacity: 0 }}
+                                    animate={{
+                                        height: 150,
+                                        opacity: 1
+                                    }}
+                                    transition={{ duration: 0.3, delay: 0 }}
+
+                                    className='projectTexts'>
+
+                                    <motion.p
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.25, delay: 0.2 }}
+                                    >
+                                        Inventory management is automated, dynamically adjusting stock levels upon each purchase. The website is designed responsively for optimal performance. It provides users with a seamless interface for browsing, selecting, and purchasing products online, ensuring efficient inventory tracking and a smooth user experience.
+                                    </motion.p>
+
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            height: 30,
+                                            alignItems: "center"
+
+                                        }}
+                                    >
+                                        <motion.button
+                                            initial={{ opacity: 0, y: -50 }}
+                                            animate={{ opacity: 1, y: 0 }}
+
+                                            transition={{ duration: 0.2, delay: 0.1 }}
+                                            onClick={() => setOpen("")}
+
+                                            style={{
+                                                backgroundColor: "transparent",
+                                                border: 0,
+                                                fontSize: 15,
+                                                marginTop: 12,
+                                                marginBottom: 12,
+                                                color: "gray"
+
+                                            }}><IoIosArrowUp />
+                                        </motion.button>
+                                    </div>
+
+
+
+
+
+                                </motion.div>
+                            }
+
                             <motion.div
 
                                 className='iconos'>
@@ -196,7 +332,81 @@ const Projects = () => {
                                 </h2>
                                 <a className='ahref' href="https://github.com/agustinurien/PriceCalculator"><GitHub /></a>
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
+                            <div className='desplegar'>
+                                <p>I spearheaded the development of a sophisticated software toolset tailored for a specific team. </p>
+                                <button
+
+                                    onClick={() => setOpen("pc")}
+                                    style={{
+                                        backgroundColor: "transparent",
+                                        border: 0,
+                                        fontSize: 20
+                                    }}><IoIosArrowDown />
+                                </button>
+                            </div>
+
+                            {
+                                open === "pc" &&
+                                <motion.div
+                                    initial={{ y: -58, x: -10, width: 365, height: 0, opacity: 0 }}
+                                    animate={{
+                                        height: 150,
+                                        opacity: 1
+                                    }}
+                                    transition={{ duration: 0.3, delay: 0 }}
+
+                                    className='projectTexts'>
+
+                                    <motion.p
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.25, delay: 0.2 }}
+                                    >
+                                        This tool, integrated with Python and a
+                                        database system, automates pricing strategies by mapping
+                                        product data from Excel files and calculating selling prices based on
+                                        desired profit margins for different markets.It features secure login capabilities for authorized personnel to
+                                        adjust market commissions and manage user permissions. <br /> <br />Upon
+                                        pricing completion, users can download updated product data in
+                                        Excel format, facilitating streamlined operations and enhancing market competitiveness for AlClick.
+
+                                    </motion.p>
+
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            height: 30,
+                                            alignItems: "center"
+
+                                        }}
+                                    >
+                                        <motion.button
+                                            initial={{ opacity: 0, y: -50 }}
+                                            animate={{ opacity: 1, y: 0 }}
+
+                                            transition={{ duration: 0.2, delay: 0.1 }}
+                                            onClick={() => setOpen("")}
+
+                                            style={{
+                                                backgroundColor: "transparent",
+                                                border: 0,
+                                                fontSize: 15,
+                                                marginTop: 12,
+                                                marginBottom: 12,
+                                                color: "gray"
+
+                                            }}><IoIosArrowUp />
+                                        </motion.button>
+                                    </div>
+
+
+
+
+
+                                </motion.div>
+                            }
+
                             <div className='iconos'>
                                 <AiFillHtml5 className="icon" />
                                 <DiCss3 className="icon" />
@@ -240,7 +450,73 @@ const Projects = () => {
                                 </h2>
                                 <a className='ahref' href="https://github.com/agustinurien/valoresHumanos"><GitHub /></a>
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
+                            <div className='desplegar'>
+                                <p>Freelance project, a platform offering a variety of 12 different psychological tests. </p>
+                                <button
+
+                                    onClick={() => setOpen("vh")}
+                                    style={{
+                                        backgroundColor: "transparent",
+                                        border: 0,
+                                        fontSize: 20
+                                    }}><IoIosArrowDown />
+                                </button>
+                            </div>
+
+                            {
+                                open === "vh" &&
+                                <motion.div
+                                    initial={{ y: -58, x: -10, width: 365, height: 0, opacity: 0 }}
+                                    animate={{
+                                        height: 135,
+                                        opacity: 1
+                                    }}
+                                    transition={{ duration: 0.3, delay: 0 }}
+
+                                    className='projectTexts'>
+
+                                    <motion.p
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.25, delay: 0.2 }}
+                                    >
+                                        Each psychological test is designed cohesively with the overall website aesthetic, ensuring a consistent and pleasant user experience. The tests include various interactive elements such as images and multiple-choice questions, seamlessly integrated into the overall design.
+                                    </motion.p>
+
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            height: 30,
+                                            alignItems: "center"
+
+                                        }}
+                                    >
+                                        <motion.button
+                                            initial={{ opacity: 0, y: -50 }}
+                                            animate={{ opacity: 1, y: 0 }}
+
+                                            transition={{ duration: 0.2, delay: 0.1 }}
+                                            onClick={() => setOpen("")}
+
+                                            style={{
+                                                backgroundColor: "transparent",
+                                                border: 0,
+                                                fontSize: 15,
+                                                marginTop: 12,
+                                                marginBottom: 12,
+                                                color: "gray"
+
+                                            }}><IoIosArrowUp />
+                                        </motion.button>
+                                    </div>
+
+
+
+
+
+                                </motion.div>
+                            }
                             <div className='iconos'>
                                 <AiFillHtml5 className="icon" />
                                 <DiCss3 className="icon" />
@@ -280,7 +556,73 @@ const Projects = () => {
                                 </h2>
                                 <a className='ahref' href="https://github.com/agustinurien/paginaComercioExterior"><GitHub /></a>
                             </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum dolores. </p>
+                            <div className='desplegar'>
+                                <p>Landing page that embodies sophistication and efficiency, incorporating key elements </p>
+                                <button
+
+                                    onClick={() => setOpen("at")}
+                                    style={{
+                                        backgroundColor: "transparent",
+                                        border: 0,
+                                        fontSize: 20
+                                    }}><IoIosArrowDown />
+                                </button>
+                            </div>
+
+                            {
+                                open === "at" &&
+                                <motion.div
+                                    initial={{ y: -58, x: -10, width: 365, height: 0, opacity: 0 }}
+                                    animate={{
+                                        height: 150,
+                                        opacity: 1
+                                    }}
+                                    transition={{ duration: 0.3, delay: 0 }}
+
+                                    className='projectTexts'>
+
+                                    <motion.p
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.25, delay: 0.2 }}
+                                    >
+                                        Integrates a contact information section alongside dynamic language localization, enabling smooth transition between English and Chinese. This enhances accessibility and fosters meaningful engagement with our exterior commerce businesses' diverse clientele, ensuring seamless communication and user experience.
+                                    </motion.p>
+
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            height: 30,
+                                            alignItems: "center"
+
+                                        }}
+                                    >
+                                        <motion.button
+                                            initial={{ opacity: 0, y: -50 }}
+                                            animate={{ opacity: 1, y: 0 }}
+
+                                            transition={{ duration: 0.2, delay: 0.1 }}
+                                            onClick={() => setOpen("")}
+
+                                            style={{
+                                                backgroundColor: "transparent",
+                                                border: 0,
+                                                fontSize: 15,
+                                                marginTop: 12,
+                                                marginBottom: 12,
+                                                color: "gray"
+
+                                            }}><IoIosArrowUp />
+                                        </motion.button>
+                                    </div>
+
+
+
+
+
+                                </motion.div>
+                            }
                             <div className='iconos'>
                                 <AiFillHtml5 className="icon" />
                                 <DiCss3 className="icon" />
@@ -294,7 +636,7 @@ const Projects = () => {
 
 
             </section>
-        </section>
+        </section >
     )
 }
 

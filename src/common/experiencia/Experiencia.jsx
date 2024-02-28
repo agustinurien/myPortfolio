@@ -66,7 +66,14 @@ const Experiencia = () => {
                             <h2>First Landing page</h2>
                             <span>FREELANCE</span>
                         </div>
-                        <p>I undertook the creation of a bespoke landing page for a client seeking a succinct representation of their company's essence. Melding HTML, CSS, and JavaScript, I crafted an intuitive and visually captivating platform that distilled the client's core identity.</p>
+                        <p>As an independent professional, I spent a year collaborating with
+                            exterior commerce businesses, focusing on technical solutions. This
+                            included developing a customized landing page, handling
+                            language localization challenges like transitioning to Chinese, and
+                            integrating a seamless contact form. Throughout the project, I
+                            provided ongoing technical support, ensuring the smooth operation
+                            of their digital presence.
+                        </p>
                     </motion.div>
                 </motion.div>
 
@@ -91,7 +98,17 @@ const Experiencia = () => {
                             <span>FREELANCE</span>
                         </div>
                         <p>
-                            In my debut as a web developer, I created a dynamic website for "Valores Humanos," integrating HTML, CSS, and JavaScript. This platform hosts 12 tailored exercises and tests, streamlining the company's recruitment process. The site reflects my commitment to seamless user experiences and bespoke solutions, laying the groundwork for future collaborative successes.</p>
+                            I worked collaboratively within a team environment, where effective
+                            communication was paramount. My role primarily involved
+                            designing and implementing various psychological tests aimed at
+                            evaluating candidates for recruitment purposes. Working within the
+                            framework established by the company, I adhered to strict
+                            guidelines and protocols to ensure the integrity and confidentiality
+                            of the assessment process. My ability to communicate effectively
+                            within the team facilitated seamless coordination and alignment of
+                            objectives, ultimately contributing to the successful execution of our
+                            recruitment initiatives.
+                        </p>
                     </motion.div>
                 </motion.div>
 
