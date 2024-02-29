@@ -105,7 +105,7 @@ const Projects = () => {
                                 <h2>
                                     Publicify
                                 </h2>
-                                <GitHub />
+                                <a className='ahref' href="https://github.com/agustinurien/Publicify"><GitHub /></a>
                             </div>
 
                             <div className='desplegar'>
