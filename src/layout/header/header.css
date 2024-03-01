@@ -119,7 +119,7 @@
         font-size: 11px;
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .contenidoHeader {
         padding-top: 10px;
         background-color: transparent;
@@ -144,9 +144,9 @@
         padding: 0px;
     }
     .contenidoHeader ul li{
-        font-size: 7px;
+        font-size: 9px;
     }
     .liS button{
-        font-size: 7px;
+        font-size: 9px;
     }
 }

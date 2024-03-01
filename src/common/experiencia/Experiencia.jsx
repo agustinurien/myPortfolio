@@ -66,14 +66,16 @@ const Experiencia = () => {
                             <h2>First Landing page</h2>
                             <span>FREELANCE</span>
                         </div>
-                        <p>As an independent professional, I spent a year collaborating with
-                            exterior commerce businesses, focusing on technical solutions. This
-                            included developing a customized landing page, handling
-                            language localization challenges like transitioning to Chinese, and
-                            integrating a seamless contact form. Throughout the project, I
-                            provided ongoing technical support, ensuring the smooth operation
-                            of their digital presence.
-                        </p>
+                        <div className="contenedorTextoEx">
+                            <p>As an independent professional, I spent a year collaborating with
+                                exterior commerce businesses, focusing on technical solutions. This
+                                included developing a customized landing page, handling
+                                language localization challenges like transitioning to Chinese, and
+                                integrating a seamless contact form. Throughout the project, I
+                                provided ongoing technical support, ensuring the smooth operation
+                                of their digital presence.
+                            </p>
+                        </div>
                     </motion.div>
                 </motion.div>
 
@@ -97,18 +99,21 @@ const Experiencia = () => {
                             <h2>Valores Humanos - Tests</h2>
                             <span>FREELANCE</span>
                         </div>
-                        <p>
-                            I worked collaboratively within a team environment, where effective
-                            communication was paramount. My role primarily involved
-                            designing and implementing various psychological tests aimed at
-                            evaluating candidates for recruitment purposes. Working within the
-                            framework established by the company, I adhered to strict
-                            guidelines and protocols to ensure the integrity and confidentiality
-                            of the assessment process. My ability to communicate effectively
-                            within the team facilitated seamless coordination and alignment of
-                            objectives, ultimately contributing to the successful execution of our
-                            recruitment initiatives.
-                        </p>
+                        <div className="contenedorTextoEx">
+
+                            <p>
+                                I worked collaboratively within a team environment, where effective
+                                communication was paramount. My role primarily involved
+                                designing and implementing various psychological tests aimed at
+                                evaluating candidates for recruitment purposes. Working within the
+                                framework established by the company, I adhered to strict
+                                guidelines and protocols to ensure the integrity and confidentiality
+                                of the assessment process. My ability to communicate effectively
+                                within the team facilitated seamless coordination and alignment of
+                                objectives, ultimately contributing to the successful execution of our
+                                recruitment initiatives.
+                            </p>
+                        </div>
                     </motion.div>
                 </motion.div>
 
@@ -132,7 +137,10 @@ const Experiencia = () => {
                             <h2>First Software</h2>
                             <span>FULL TIME</span>
                         </div>
-                        <p>In my freelance capacity, I developed a robust Toolset software for AlClick, an emerging player in the industry. Fueled by React, Python, and Framer Motion, the software not only met but exceeded expectations. Its seamless functionality and engaging user interface prompted AlClick to extend a full-time developer role to me. Now, as the sole developer in their ranks, I continue to contribute innovative solutions that elevate the company's digital presence and user experience. This transition from freelancer to a key member of the development team is a testament to the impactful synergy of skills and vision.</p>
+                        <div className="contenedorTextoEx">
+
+                            <p>In my freelance capacity, I developed a robust Toolset software for AlClick, an emerging player in the industry. Fueled by React, Python, and Framer Motion, the software not only met but exceeded expectations. Its seamless functionality and engaging user interface prompted AlClick to extend a full-time developer role to me. Now, as the sole developer in their ranks, I continue to contribute innovative solutions that elevate the company's digital presence and user experience. This transition from freelancer to a key member of the development team is a testament to the impactful synergy of skills and vision.</p>
+                        </div>
                     </motion.div>
                 </motion.div>
 

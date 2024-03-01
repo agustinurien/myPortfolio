@@ -75,7 +75,7 @@ const Contenido = () => {
                         animate={{
                             opacity: 1,
 
-                        }}> I'm a Front-End Developer specializing in crafting visually captivating websites that captivate and delight users. With a seamless blend of technical mastery and artistic innovation, I create user-friendly digital experiences that leave a lasting impression. </motion.p>
+                        }}> I'm a Front-End Developer specializing in crafting visually captivating websites that delight users. With a seamless blend of technical mastery and artistic innovation, I create user-friendly digital experiences that leave a lasting impression. </motion.p>
                     <div className="buttons">
                         <motion.a
                             whileHover={whileHover}
