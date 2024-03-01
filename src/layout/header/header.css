@@ -119,3 +119,34 @@
         font-size: 11px;
     }
 }
+@media screen and (max-width: 450px) {
+    .contenidoHeader {
+        padding-top: 10px;
+        background-color: transparent;
+        display: flex;
+        position: "sticky";
+        top: 0;
+        justify-content: center;
+        z-index: 2;
+    }
+    .contenidoHeader nav{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-right: 0px;
+    }
+    .contenidoHeader ul{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+        padding: 0px;
+    }
+    .contenidoHeader ul li{
+        font-size: 7px;
+    }
+    .liS button{
+        font-size: 7px;
+    }
+}

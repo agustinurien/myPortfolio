@@ -151,4 +151,29 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .contenedor-main{
+        height: 40vh;
+        padding: 0px 40px;
+        display: flex;
+    }
+    .contenedorImagen{
+        display: none;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .brief{
+        width: 90%;
+        font-size: 10px;
+    }
+    .buttons{
+        padding-top: 0px;
+        font-size: 25px;
+    }
+    .buttons button{
+        font-size: 10px;
+    }
+}
+
 
