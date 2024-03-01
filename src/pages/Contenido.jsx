@@ -7,7 +7,7 @@ import Languaje from "../common/languaje/Languaje"
 import AboutMe from "../common/aboutme/AboutMe"
 
 import cvPdf from '../cv/cv-AgustinUrien.pdf';
-
+import logo from '../assets/logo.svg';
 
 const Contenido = () => {
 
@@ -108,7 +108,10 @@ const Contenido = () => {
                                 color: "#000"
                             }}
 
-                        ><Download />Download CV</motion.button>
+
+                        ><Download
+
+                            />Download CV</motion.button>
 
                     </div>
                 </section>
@@ -124,21 +127,9 @@ const Contenido = () => {
                         scale: 1
                     }}
                     className="contenedorImagen">
-                    <motion.div
-                        initial={{ y: 175 }}
-                        className="contenidoLogo">
-
-                    </motion.div>
-                    <motion.svg
-                        style={{ rotate }}
-                        animate={{
-                            scale: 1.5
-                        }}
-                        className="blob2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#000000" d="M61.2,-60.8C75.9,-46.6,82,-23.3,80,-2.1C77.9,19.2,67.7,38.3,53,54.9C38.3,71.5,19.2,85.4,-1.9,87.3C-23,89.2,-45.9,79,-60.4,62.5C-75,45.9,-81,23,-78.9,2.1C-76.8,-18.7,-66.5,-37.5,-52,-51.7C-37.5,-66,-18.7,-75.8,2.3,-78C23.3,-80.3,46.6,-75.1,61.2,-60.8Z" transform="translate(100 100)" />
-                    </motion.svg>
-
-
+                    <img
+                        className="logoImg"
+                        src={logo} alt="" />
                 </motion.section>
 
             </div >
