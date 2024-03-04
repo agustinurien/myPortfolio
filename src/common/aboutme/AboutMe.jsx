@@ -28,7 +28,7 @@ const AboutMe = () => {
         <section
             id="abme"
             className="fondo3">
-            <motion.h1
+            <motion.h2
                 variants={{
                     hidden: { opacity: 0, x: 75 },
                     visible: { opacity: 1, x: 0 }
@@ -38,7 +38,7 @@ const AboutMe = () => {
                 animate={controls}
                 ref={ref}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="abMe">About me.</motion.h1>
+                className="abMe">About me.</motion.h2>
             <div className="ccAM">
 
                 <section className="contenedorAM">
@@ -46,7 +46,7 @@ const AboutMe = () => {
                         variants={{
                             hidden: { opacity: 0, height: 0 },
                             visible: {
-                                opacity: 1, height: "fit-content"
+                                opacity: 1, height: 267
                             },
                         }
                         }
@@ -55,6 +55,8 @@ const AboutMe = () => {
                         transition={{ duration: 0.9, delay: 0 }}
                         ref={ref}
                         className="miHistoria">
+
+
                         <motion.img
                             variants={{
                                 hidden: { opacity: 0 },
@@ -68,6 +70,7 @@ const AboutMe = () => {
                             animate={controls}
                             transition={{ duration: 0.5, delay: 0.8 }}
                             className="imagenFotoMia" src={foto} alt="" />
+
 
                         <div className="parrafos">
                             <motion.p
@@ -112,6 +115,7 @@ const AboutMe = () => {
                                 className="textoAm">Looking ahead, I envision leveraging this coding expertise as a stepping stone to finding the courage and financial means to pursue my original dream of studying fine arts. While coding has captured my professional focus, I plan to embrace the world of visual arts as a cherished hobby, enriching my life with a harmonious blend of technology and creativity. This journey has not only opened doors to a promising career but has also illuminated a path towards a fulfilling balance between the realms of coding and artistic expression.</motion.p>
                         </div>
                         <motion.div
+                            className="rocket"
                             variants={{
                                 hidden: { opacity: 0, x: -30 },
                                 visible: {
@@ -123,7 +127,7 @@ const AboutMe = () => {
                             animate={controls}
                             transition={{ duration: 0.4, delay: 0.8 }}
                         >
-                            <Lottie options={roketData} width={380} height={380} style={{ paddingLeft: 3.5 }} />
+                            <Lottie options={roketData} width={300} height={300} style={{ paddingLeft: 3.5 }} />
                         </motion.div>
                     </motion.div>
                 </section>

@@ -192,3 +192,65 @@
     color: rgb(92, 92, 92);
 }
 
+@media screen and (max-width: 1500px) {
+    .proy{
+        margin-left: 10%;
+        
+    }
+    .contenedorProyectos{
+        margin: 0px;
+        padding: 35px;
+        padding-top: 0px;
+        gap: 80px;
+        
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .proy{
+        display: flex;
+        justify-content: center;
+        margin:0px;
+        margin-bottom: 50px;
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .contenedorProyectos{
+        margin: 0px;
+        padding: 20px;
+        padding-top: 0px;
+        gap: 70px;
+    }
+    .proyectoIndividual{
+        width: 360px;
+        font-family: 'Bricolage Grotesque', sans-serif;
+    }
+
+    .proyectoIndividual p{
+        font-size: 10px;
+    }
+
+    .tituloGit{
+        font-size: 14px;
+    }
+
+    .window{
+        width: 310px;
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .proy{
+        margin-left: 10%;
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+
+    .contenedorProyectos{
+        margin: 0px 0px;
+        
+    }
+}
+

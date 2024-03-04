@@ -70,7 +70,7 @@ const Header = () => {
                                 opacity: 1, x: 0,
                                 color: "#fff"
                             }}
-                            transition={{ duration: 0.5, delay: 0.3 }}
+                            transition={{ duration: 0.5, delay: 0.45 }}
                         ><Link
                             activeClass="active"
                             to="proj"
@@ -118,7 +118,7 @@ const Header = () => {
                                 opacity: 1, x: 0,
                                 color: "#fff"
                             }}
-                            transition={{ duration: 0.5, delay: 0.3 }}
+                            transition={{ duration: 0.5, delay: 0.35 }}
                         ><Link
                             activeClass="active"
                             to="skill"

@@ -8,6 +8,7 @@ import AboutMe from "../common/aboutme/AboutMe"
 
 import cvPdf from '../cv/cv-AgustinUrien.pdf';
 import logo from '../assets/logo.svg';
+import { Helmet } from "react-helmet-async"
 
 const Contenido = () => {
 
@@ -55,6 +56,11 @@ const Contenido = () => {
     };
     return (
         <>
+            <Helmet>
+                <title>Agustin Urien, Front-end | Portfolio</title>
+                <link rel="canonical" href="/" />
+                <meta name="description" content="Take a look at an astonishing and skillful front-end developer portfolio with amazing animations." />
+            </Helmet>
             <div
                 className="contenedor-main">
                 <section className="seccionInfo">

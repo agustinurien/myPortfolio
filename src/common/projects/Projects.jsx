@@ -51,6 +51,7 @@ const Projects = () => {
 
     return (
         <section
+            ref={ref}
             id='proj'
             className='fondo2'>
             <motion.h2
@@ -59,7 +60,7 @@ const Projects = () => {
                     visible: { opacity: 1, x: 0 }
                 }
                 }
-                ref={ref}
+
                 initial="hidden"
                 animate={controls}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -75,7 +76,7 @@ const Projects = () => {
                     }}
                     initial="hidden"
                     animate={controls}
-                    transition={{ duration: 0.6, delay: 0.2 }}
+                    transition={{ duration: 0.6, delay: 0.15 }}
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div
@@ -195,7 +196,7 @@ const Projects = () => {
                     }}
                     initial="hidden"
                     animate={controls}
-                    transition={{ duration: 0.6, delay: 0.4 }}
+                    transition={{ duration: 0.6, delay: 0.25 }}
                     className='proyectoIndividual'>
                     <div className='box'>
 
@@ -308,7 +309,7 @@ const Projects = () => {
                     }}
                     initial="hidden"
                     animate={controls}
-                    transition={{ duration: 0.6, delay: 0.6 }}
+                    transition={{ duration: 0.6, delay: 0.35 }}
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div
@@ -428,7 +429,7 @@ const Projects = () => {
                     }}
                     initial="hidden"
                     animate={controls}
-                    transition={{ duration: 0.6, delay: 0.2 }}
+                    transition={{ duration: 0.6, delay: 0.45 }}
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div
@@ -535,7 +536,7 @@ const Projects = () => {
                     }}
                     initial="hidden"
                     animate={controls}
-                    transition={{ duration: 0.6, delay: 0.4 }}
+                    transition={{ duration: 0.6, delay: 0.55 }}
                     className='proyectoIndividual'>
                     <div className='box'>
                         <motion.div

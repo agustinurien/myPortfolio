@@ -5,7 +5,7 @@
 }
 .ccAM{
     background-color: transparent;
-    height: 350px;
+    
 
 }
 .contenedorAM{
@@ -25,9 +25,10 @@
 }
 .miHistoria{
     display: flex;
-    gap: 20px;
+    gap: 25px;
     background-color: black;
     width: 76%;
+    height: 300px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
     padding: 20px;
@@ -35,7 +36,8 @@
 }
 
 .imagenFotoMia{
-    width: 280px;
+    width: auto;
+    height: 100%;
     background-color: aqua;
     border-radius: 6px;
 }
@@ -47,8 +49,71 @@
 }
 .parrafos{
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: start;
     flex-direction: column;
-    width: 55%;
+    gap: 10px;
+    height: 100%;
+}
+
+.rocket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+    .abMe{
+        margin-left: 10%;
+        
+    }
+    .textoAm{
+        margin: 0px;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 16px;
+    }
+    .rocket{
+        display: none;
+
+    }
+    .parrafos{
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .abMe{
+        display: flex;
+        justify-content: center;
+        margin:0px;
+        margin-bottom: 50px;
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .textoAm{
+        margin: 0px;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    
+    .imagenFotoMia{
+        display: none;
+    }
+    .textoAm{
+        margin: 0px;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .abMe{
+        margin-left: 42px;
+        margin-bottom: 40px;
+        font-size: 25px;
+        
+    }
 }
