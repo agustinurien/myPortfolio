@@ -2,10 +2,9 @@ import "../header/header.css"
 import { motion, useScroll } from "framer-motion"
 import { Link } from "react-scroll";
 import Lottie from "react-lottie"
-
-
 import stars from "../../assets/stars.json"
 import stars2 from "../../assets/stars2.json"
+
 const stars2Data = { loop: true, autoplay: true, animationData: stars2 }
 const starsData = { loop: true, autoplay: true, animationData: stars }
 

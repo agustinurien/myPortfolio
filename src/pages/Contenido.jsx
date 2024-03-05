@@ -1,51 +1,36 @@
 import { Download, GitHub, LinkedIn } from "@mui/icons-material"
 import "../pages/contenido.css"
-import { motion, useTime, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import Experiencia from "../common/experiencia/Experiencia"
 import Projects from "../common/projects/Projects"
 import Languaje from "../common/languaje/Languaje"
 import AboutMe from "../common/aboutme/AboutMe"
-
 import cvPdf from '../cv/cv-AgustinUrien.pdf';
 import logo from '../assets/logo.svg';
 import { Helmet } from "react-helmet-async"
 
 const Contenido = () => {
 
+    <Helmet>
+        <link rel="preload" as="image" href="../assets/logo.svg" />
+    </Helmet>
+
     const downloadPdf = async () => {
         try {
-            // Fetch the PDF file
             const response = await fetch(cvPdf);
             console.log('Response:', response);
             const blob = await response.blob();
-
-            // Create a URL for the blob object
             const url = URL.createObjectURL(blob);
-
-            // Create a link element
             const link = document.createElement('a');
-
-            // Set the href attribute of the link to the URL of the blob
             link.href = url;
-
-            // Set the download attribute of the link to the desired file name
             link.download = 'cv-AgustinUrien.pdf';
-
-            // Append the link to the document body
             document.body.appendChild(link);
-
-            // Trigger a click event on the link
             link.click();
-
-            // Remove the link from the document body
             document.body.removeChild(link);
         } catch (error) {
             console.error('Error downloading PDF:', error);
         }
     };
-
-    const time = useTime();
-    const rotate = useTransform(time, [0, 15000], [0, 360], { clamp: false });
 
     const whileHover = {
         scale: 1.2,
@@ -81,7 +66,7 @@ const Contenido = () => {
                         animate={{
                             opacity: 1,
 
-                        }}> I'm a Front-End Developer specializing in crafting visually captivating websites that delight users. With a seamless blend of technical mastery and artistic innovation, I create user-friendly digital experiences that leave a lasting impression. </motion.p>
+                        }}> I am a Front-End Developer specializing in crafting visually captivating websites that delight users. With a seamless blend of technical mastery and artistic innovation, I create user-friendly digital experiences that leave a lasting impression. </motion.p>
                     <div className="buttons">
                         <motion.a
                             whileHover={whileHover}
@@ -92,7 +77,12 @@ const Contenido = () => {
                                 x: 0,
                                 color: "#000"
                             }}
-                            className="L" href="https://www.linkedin.com/in/agustin-urien-210b07240/"><LinkedIn fontSize="inherit" /></motion.a>
+                            className="L"
+                            title="Linkedin"
+                            href="https://www.linkedin.com/in/agustin-urien-210b07240/">
+                            <LinkedIn fontSize="inherit" />
+
+                        </motion.a>
                         <motion.a
                             whileHover={whileHover}
                             initial={{ x: -75, opacity: 0 }}
@@ -102,6 +92,7 @@ const Contenido = () => {
                                 x: 0,
                                 color: "#000"
                             }}
+                            title="Github"
                             href="https://github.com/agustinurien"><GitHub fontSize="inherit" /></motion.a>
                         <motion.button
                             onClick={() => downloadPdf()}
@@ -113,20 +104,13 @@ const Contenido = () => {
                                 x: 0,
                                 color: "#000"
                             }}
-
-
-                        ><Download
-
-                            />Download CV</motion.button>
-
+                        ><Download />Download CV</motion.button>
                     </div>
                 </section>
 
                 <motion.section
-
                     initial={{
                         scale: 0.5
-
                     }}
                     transition={{ duration: 0.5 }}
                     animate={{
@@ -135,9 +119,8 @@ const Contenido = () => {
                     className="contenedorImagen">
                     <img
                         className="logoImg"
-                        src={logo} alt="" />
+                        src={logo} alt="logoAgustinUrien" />
                 </motion.section>
-
             </div >
             <Experiencia />
             <Projects />

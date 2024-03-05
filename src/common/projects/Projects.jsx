@@ -106,7 +106,7 @@ const Projects = () => {
                                 <h2>
                                     Publicify
                                 </h2>
-                                <a className='ahref' href="https://github.com/agustinurien/Publicify"><GitHub /></a>
+                                <a className='ahref' title="Github" href="https://github.com/agustinurien/Publicify"><GitHub /></a>
                             </div>
 
                             <div className='desplegar'>
@@ -218,7 +218,7 @@ const Projects = () => {
                                 <h2>
                                     E-commerce
                                 </h2>
-                                <a className='ahref' href="https://github.com/agustinurien/proyecto-react"><GitHub /></a>
+                                <a className='ahref' title="Github" href="https://github.com/agustinurien/proyecto-react"><GitHub /></a>
                             </div>
                             <div className='desplegar'>
                                 <p> Playstation shop. The website allows users to browse through and buy PlayStation products </p>
@@ -331,7 +331,7 @@ const Projects = () => {
                                 <h2>
                                     Price-Calculator
                                 </h2>
-                                <a className='ahref' href="https://github.com/agustinurien/PriceCalculator"><GitHub /></a>
+                                <a className='ahref' title="Github" href="https://github.com/agustinurien/PriceCalculator"><GitHub /></a>
                             </div>
                             <div className='desplegar'>
                                 <p>I spearheaded the development of a sophisticated software toolset tailored for a specific team. </p>
@@ -449,7 +449,7 @@ const Projects = () => {
                                 <h2>
                                     Valores Humanos
                                 </h2>
-                                <a className='ahref' href="https://github.com/agustinurien/valoresHumanos"><GitHub /></a>
+                                <a className='ahref' title="Github" href="https://github.com/agustinurien/valoresHumanos"><GitHub /></a>
                             </div>
                             <div className='desplegar'>
                                 <p>Freelance project, a platform offering a variety of 12 different psychological tests. </p>
@@ -555,7 +555,7 @@ const Projects = () => {
                                 <h2>
                                     Atsco-Trading
                                 </h2>
-                                <a className='ahref' href="https://github.com/agustinurien/paginaComercioExterior"><GitHub /></a>
+                                <a className='ahref' title="Github" href="https://github.com/agustinurien/paginaComercioExterior"><GitHub /></a>
                             </div>
                             <div className='desplegar'>
                                 <p>Landing page that embodies sophistication and efficiency, incorporating key elements </p>
