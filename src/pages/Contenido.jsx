@@ -57,8 +57,8 @@ const Contenido = () => {
     return (
         <>
             <Helmet>
+                <link rel="canonical" href="https://my-portfolio-ten-pi-60.vercel.app/" />
                 <title>Agustin Urien, Front-end | Portfolio</title>
-                <link rel="canonical" href="/" />
                 <meta name="description" content="Take a look at an astonishing and skillful front-end developer portfolio with amazing animations." />
             </Helmet>
             <div
