@@ -1,25 +1,21 @@
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     height: 430px;
     background-color: black;
     
 }
 
 .contenedorFoto{
-    width: 70%;
+    width: 65%;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), url(../../assets/fondo.png);
     background-position: center;
     background-size: cover;
 }
 
-
 .formContact{
-    margin: 30px;
     margin-top:50px;
-    margin-right: 150px;
     width: 450px;
-    height: 120%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,10 +23,11 @@
     background-color: white;
     padding: 20px;
     border-radius: 5px;
+    
 }
 
 .contacto{
-    padding-left: 180px;
+    padding-left: 4%;
     background-color: rgb(0, 0, 0);
     height: 300px;
     display: flex;
@@ -78,6 +75,7 @@
     flex-direction: column;
     gap: 10px;
     width: 95%;
+    height: 500px;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 .camposC h3{
@@ -95,13 +93,14 @@
     padding-left: 10px;
     background-color: rgb(241, 241, 241);
     padding-left: 10px;
-    height: 255px;
+    height: 270px;
     font-family: 'Bricolage Grotesque', sans-serif;
     resize: none;
     padding-top: 10px;
 }
 .contenedorBoton{
     width: 95%;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -169,8 +168,226 @@
     position: absolute;
     
 }
-
-.tracker{
+.stars3{
     position: absolute;
+    
+}
+
+.stars4{
+    display: none;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    .contenedorFoto{
+        display: none;
+    }
+
+    .formContact{
+        margin-top: 30px;
+        z-index: 2;
+    }
+    
+    .contacto{
+        padding-left: 0px;
+        height: 270px;
+        justify-content: center;
+        gap: 150px;
+    }
+
+    .camposC{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 95%;
+        height: 360px;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        
+    }
+    .camposC .textArea{
+        height: 165px;
+        
+    }
+    .camposC h3{
+        margin: 7px;
+        
+    }
+
+    .contenedorL h4{
+        font-size: 24px;
+        
+    }
+    .contenedorC h4{
+        font-size: 24px;
+        
+    }
+    .datosSpan{
+        font-size: 14px;
+    }
+    .stars3{
+        display: none;
+        
+    }
+    .contenedorForm{
+        z-index: 2;
+    }
+    .stars4{
+        position: absolute;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    .contenedorFoto{
+        display: none;
+    }
+
+    .formContact{
+        margin-top: 30px;
+        width: 320px;
+    }
+    
+
+    .contacto{
+        height: 160px;
+        gap: 10%;
+        padding: 0px 15px;
+    }
+
+    .camposC{
+        height: 340px;
+    }
+    .camposC .textArea{
+        height: 145px;
+        
+    }
+    .camposC h3{
+        margin: 7px;
+        
+    }
+    .contenedorL{
+        margin-top: 70px;
+        gap: 6px;
+    }
+    .contenedorC{
+        margin-top: 70px;
+        gap: 6px;
+        
+    }
+    .contenedorL h4{
+        font-size: 1rem;
+        
+    }
+    .contenedorC h4{
+        font-size: 1rem;
+        
+    }
+    .datosSpan{
+        font-size: 0.65rem;
+    }
+    .sociales{
+        gap:5px;
+    }
+    .sociales .logoSocial{
+        font-size: 16px;
+
+    }
+    
+    .stars4{
+        display: none;
+        
+    }
+    .botonEnviar2{
+        width: 303px;
+        font-size: 20px;
+        
+    }
+    .hover {
+        position: absolute;
+        width: 303px;
+        height: 45px;
+        background-color: #000000;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .formContact{
+        
+        width: 250px;
+    }
+    
+
+    .contacto{
+        height: 130px;
+        gap: 7%;
+        padding: 0px 15px;
+    }
+
+    .camposC{
+        height: 330px;
+    }
+    .camposC .textArea{
+        height: 135px;
+        
+    }
+    .camposC h3{
+        margin: 5px;
+        
+    }
+    .contenedorL{
+        margin-top: 50px;
+        
+    }
+    .contenedorC{
+        margin-top: 50px;
+        
+        
+    }
+    .contenedorL h4{
+        font-size: 0.7rem;
+        
+    }
+    .contenedorC h4{
+        font-size: 0.7rem;
+        
+    }
+    .datosSpan{
+        font-size: 0.5rem;
+    }
+    .sociales{
+        gap:5px;
+    }
+    .sociales .logoSocial{
+        font-size: 14px;
+
+    }
+    
+    .stars4{
+        display: none;
+        
+    }
+    .botonEnviar2{
+        width: 238px;
+        font-size: 15px;
+        
+    }
+    .hover {
+        width: 238px;
+        font-size: 15px;
+    }
     
 }

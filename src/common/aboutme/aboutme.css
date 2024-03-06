@@ -2,6 +2,7 @@
     background-image: url(../../assets/pantalla2.png);
     background-size: cover;
     padding-bottom: 80px;
+    height: 500px;
 }
 .ccAM{
     background-color: transparent;

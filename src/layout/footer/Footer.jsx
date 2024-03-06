@@ -71,6 +71,10 @@ const Footer = () => {
                 id="cont"
                 ref={ref}
                 className="footer">
+                <div className="stars4">
+                    <Lottie options={starsData} width={400} height={400} />
+                    <Lottie options={stars2Data} width={300} height={300} />
+                </div>
 
                 <div className="contenedorFoto">
 
@@ -88,12 +92,14 @@ const Footer = () => {
 
                 </div>
 
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={sendEmail}
+                    className="contenedorForm"
+                >
                     <motion.section
 
                         variants={{
                             hidden: { opacity: 0, height: 0 },
-                            visible: { opacity: 1, height: 515 }
+                            visible: { opacity: 1, height: "fit-content" }
 
                         }}
                         initial="hidden"
@@ -218,18 +224,18 @@ const Footer = () => {
                     <span className="datosSpan"><LocationOn fontSize="inherit" /> Buenos Aires, Argentina</span>
                 </motion.div>
 
-                <div className="stars">
+                <div className="stars3">
                     <Lottie options={starsData} width={300} height={300} />
                 </div>
                 <motion.div
                     initial={{ x: 200 }}
-                    className="stars">
+                    className="stars3">
                     <Lottie options={stars2Data} width={300} height={300} />
                 </motion.div>
 
                 <motion.div
                     initial={{ x: 500 }}
-                    className="stars">
+                    className="stars3">
                     <Lottie options={stars2Data} width={280} height={280} />
                 </motion.div>
 
@@ -258,8 +264,8 @@ const Footer = () => {
                     className="contenedorC">
                     <h4>SOCIAL.</h4>
                     <div className="sociales">
-                        <a className="ahref" href="https://www.instagram.com/agustin_urien/"><Instagram /></a>
-                        <Twitter />
+                        <a className="ahref" href="https://www.instagram.com/agustin_urien/"><Instagram className="logoSocial" /></a>
+                        <Twitter className="logoSocial" />
                     </div>
                 </motion.div>
 
