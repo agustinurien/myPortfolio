@@ -1,3 +1,21 @@
+
+.contenedorStars{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    justify-content: end;
+    gap: 5%;
+    
+}
+
+.starsH{
+    background-color: transparent;
+    
+}
+.starsH2{
+    background-color: transparent;
+    
+}
 .contenidoHeader {
     padding-top: 10px;
     background-color: transparent;
@@ -51,6 +69,7 @@
     border: 0px;
     font-family: 'Space Mono', monospace;
     font-size: 15px;
+    
 }
 .liS button:hover{
     font-weight: bolder;
@@ -58,6 +77,21 @@
 }
 
 @media screen and (max-width: 1500px) {
+
+    .contenedorStars{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        gap: 2%;
+        
+    }
+    
+    .starsH{
+        background-color: transparent;
+        background-color: blue;
+    }
+
     .contenidoHeader {
         padding-top: 10px;
         background-color: transparent;
@@ -89,6 +123,12 @@
 }
 
 @media screen and (max-width: 930px) {
+    .contenedorStars{
+        width: 100%;
+        justify-content: center;
+        height: 100%;
+        
+    }
     .contenidoHeader {
         padding-top: 10px;
         background-color: transparent;
@@ -120,6 +160,9 @@
     }
 }
 @media screen and (max-width: 460px) {
+    .starsH2{
+        display: none;
+    }
     .contenidoHeader {
         padding-top: 10px;
         background-color: transparent;

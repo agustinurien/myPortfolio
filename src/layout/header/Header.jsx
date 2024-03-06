@@ -19,27 +19,37 @@ const Header = () => {
                 zIndex: 2
             }}
         >
+            <section
+                className="contenedorStars"
+            >
+                <motion.div
+                    className="starsH2">
+                    <Lottie options={stars2Data} width={100} height={100} />
+                </motion.div>
+
+                <motion.div
+                    className="starsH">
+                    <Lottie options={starsData} width={100} height={100} />
+                </motion.div>
+
+                <motion.div
+                    className="starsH">
+                    <Lottie options={stars2Data} width={100} height={100} />
+                </motion.div>
+
+                <motion.div
+                    className="starsH">
+                    <Lottie options={stars2Data} width={100} height={100} />
+                </motion.div>
+            </section>
+
 
             <div
                 className="contenidoHeader">
-                <motion.div
-                    initial={{ x: 0 }}
-                    className="stars">
-                    <Lottie options={starsData} width={100} height={100} />
-                </motion.div>
-                <motion.div
-                    initial={{ x: -200 }}
-                    className="stars">
-                    <Lottie options={stars2Data} width={100} height={100} />
-                </motion.div>
-                <motion.div
-                    initial={{ x: -500 }}
-                    className="stars">
-                    <Lottie options={stars2Data} width={100} height={100} />
-                </motion.div>
                 <nav>
                     <ul>
                         <motion.li
+                            style={{ zIndex: 2 }}
                             variants={{
                                 hidden: { opacity: 0, x: -75 },
                             }
